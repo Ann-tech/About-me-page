@@ -1,0 +1,126 @@
+:root {
+    font-size: 62.5%;
+    --main-bg-color: #6A5272;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+
+.split-img-container img {
+    display: none;
+}
+
+label, input {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background: var(--main-bg-color);
+    padding-bottom: 1rem;
+}
+
+.main-body main {
+    height: 100%;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+}
+
+input, select {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #222;
+}
+
+.form-container {
+    border-radius: 5px;
+    padding: 2rem 3rem;
+    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Risque', cursive;
+}
+
+input[type='submit'] {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.textHeading-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.textHeading-container svg {
+    margin-left: 5px;
+}
+
+
+@media screen and (min-width: 468px) {
+    input[type='submit'] {
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        background: #fff;
+    }
+    
+    .split-img-container {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .split-img-container img {
+        display: block;
+        width: 80%;
+        height: 550px;
+    }
+    .form-container {
+        width: 60%;
+        padding: 2rem 6rem;
+    }
+
+    .half-width {
+        width: 47%;
+    }
+
+    .half-width-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-container {
+        border-radius: initial;
+        margin: initial;
+    }
+
+    input[type='submit'] {
+        width: 15%;
+        border-radius: 10px;
+        background: var(--main-bg-color);
+        border: 1px solid transparent;
+        color: #fff;
+        cursor: pointer;
+    }
+}

@@ -4,7 +4,197 @@
     box-sizing: border-box;
 }
 
+
 :root {
     font-size: 62.5%;
     --main-bg-color: #6A5272;
 }
+
+
+
+  /* landing section */
+  #landing-section {
+    text-align: center;
+  }
+  #landing-section img {
+    width: 200px;
+    height: auto;
+  }
+
+  main {
+    background: var(--main-bg-color);
+  }
+
+  #landing-section div {
+    background: #fff;
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 90%;
+  }
+
+  #landing-section h1 {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+  }
+
+  #landing-section p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  #about-me-section h3, h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+  }
+  
+
+  
+
+  #about-me-section-container img {
+    display: none;
+  }
+
+  .align-block {
+    display: block;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  #contact-me-section form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #contact-me-section img {
+    display: none;
+  }
+
+  #contact-me-section .full-width {
+    background: var(--main-bg-color);
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+  }
+
+  #contact-me-section label {
+    color: #fff;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .align-left {
+    text-align: left;
+  }
+  label {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+  }
+
+  input, textarea {
+    margin-bottom: 15px;
+  }
+
+  #contact-me-section img {
+    display: none;
+  }
+
+  #contact-me-section .btn {
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-top: 2rem;
+    background: #fff;
+    color: var(--main-bg-color);
+    font-size: 1.4rem;
+  }
+  @media screen and (min-width: 480px) {
+    #landing-section div {
+      width: 60%;
+    }
+
+    #landing-section img {
+      width: 250px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    #landing-section div {
+      width: 50%;
+      margin-bottom: 6rem;
+    }
+
+    #contact-me-section img {
+      display: block;
+    }
+
+    #about-me-section-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6rem;
+    }
+
+    #about-me-section-container img {
+      display: block;
+      width: 20%;
+      height: 80%;
+      
+    }
+
+    #about-me-section {
+      width: 80%;
+      background: #fff;
+      padding-left: 3rem;
+    }
+
+    #about-me-section h3, 
+    #about-me-section p, h2 {
+      color: #000;
+      text-align: left;
+    }
+
+    #contact-me-section {
+      display: flex;
+    }
+    #contact-me-section form {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .contact-img-container {
+      width: 20%;
+    }
+
+    /* #contact-me-section img {
+      width: 20%;
+    } */
+
+    .form-section-container {
+      padding: 2rem 6rem;
+      width: 80%;
+      background: #Fff;
+    }
+
+    #contact-me-section .full-width {
+      background: #fff;
+      border: 1px solid #222;
+    }
+
+    #contact-me-section label {
+      color: #000;
+    }
+
+    
+  }
+
+  @media screen and (min-width: 1024px) {
+    #landing-section div {
+      width: 30%;
+    }
+  }
+
