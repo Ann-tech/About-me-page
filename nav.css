@@ -42,6 +42,11 @@ header {
     font-size: 1.4rem;
   }
 
+  .nav-ul .current {
+    color: #000;
+    text-decoration: underline;
+  }
+
    .header-container input[type="checkbox"] {
     position: absolute;
     display: block;
