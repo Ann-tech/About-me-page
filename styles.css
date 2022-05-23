@@ -10,6 +10,9 @@
     --main-bg-color: #6A5272;
 }
 
+body {
+  color: #222;
+}
 
 
   /* landing section */
@@ -28,7 +31,7 @@
   #landing-section div {
     background: #fff;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 60px 0;
     width: 90%;
   }
 
@@ -115,7 +118,7 @@
   }
   @media screen and (min-width: 480px) {
     #landing-section div {
-      width: 60%;
+      width: 70%;
     }
 
     #landing-section img {
@@ -125,7 +128,7 @@
 
   @media screen and (min-width: 768px) {
     #landing-section div {
-      width: 50%;
+      width: 60%;
       margin-bottom: 6rem;
     }
 
@@ -194,7 +197,7 @@
 
   @media screen and (min-width: 1024px) {
     #landing-section div {
-      width: 30%;
+      width: 40%;
     }
   }
 
