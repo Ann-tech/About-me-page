@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="flex.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Risque&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <title>Register</title>
+    <title>Calculator</title>
 </head>
-<body>
+<body class="main-body">
     <header class="header-container">
         <input type="checkbox" name="" id="">
         <div class="hamburger-lines">
@@ -21,12 +22,12 @@
         </div>
         <div class="menu-items">
             <nav>
-                <ul class="nav-ul">
+                <ul class="nav-ul"> 
                     <li><a href="index.html">About me</a></li>
                     <li><a href="index.html#contact-me-section">Contact me</a></li>
-                    <li><a href="register.html" class="current">Register</a></li>
+                    <li><a href="register.html">Register</a></li>
                     <li><a href="login.html">Login</a></li>
-                    <li><a href="calculator.html">Calculator</a></li>
+                    <li><a href="calculator.html" class="current">Calculator</a></li>
                 </ul>
             </nav>
             
@@ -59,53 +60,75 @@
         </div>
     </header>
     <main>
-        <div class="split-img-container">
-            <img src="images/register-login-img.svg" alt="">
-        </div>
-        <section class="form-container">
-            <div class="textHeading-container">
-                <h1>Register</h1>
-                <svg width="40" height="40" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0ZM35.7269 11.7096L40.921 16.9037L24.6979 33.1299L19.5343 38.2904L14.3402 33.0963L9.07896 27.832L14.2395 22.6715L19.5008 27.9358L35.7269 11.7096Z" fill="#222222"/>
-                </svg>
-            </div>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="4"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="top">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td id="ac">AC</td>
+                    <td>0</td>
+                    <td>%</td>
+                    <td>/</td>
+                </tr>
+                <tr>
+                    <td colspan="2">=</td>
+                    <td colspan="2" id="off">~ Clear</td>
             
-            <form action="">
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName" class="full-width">
-                <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" id="lastName" class="full-width">
-                <div class="half-width-container">
-                    <div class="half-width">
-                        <label for="phone">Phone</label>
-                        <input type="tel" name="phone" id="phone">
+                    
+                </tr>
+            </tbody>
+        </table>
+        <section id="mean">
+            <div id="container">
+                <div id="display"></div>
+                <div id="all-buttons">
+                    <div class="each-row">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
                     </div>
-                    <div class="half-width">
-                        <label for="gender">Gender</label>
-                        <select name="gender" id="gender">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
+                    <div class="each-row">
+                        <button>5</button>
+                        <button>6</button>
+                        <button>7</button>
+                        <button>8</button>
+                    </div>
+                    <div class="each-row">
+                        <button>9</button>
+                        <button>0</button>
+                        <button>AC</button>
+                        <button>=</button>
+                    </div>
+                    <div class="each-row">
+                        <button>+</button>
+                        <button>-</button>
+                        <button>/</button>
+                        <button>*</button>
                     </div>
                 </div>
-                <div class="half-width-container">
-                    <div class="half-width">
-                        <label for="country">Country</label>
-                        <input type="tel" name="country" id="phone">
-                    </div>
-                    <div class="half-width">
-                        <label for="state">State/Province</label>
-                        <input type="tel" name="state" id="state">
-                    </div>
-                </div>
-                <label for="userName">UserName</label>
-                <input type="text" name="userName" id="userName" class="full-width">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password" class="full-width">
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="confirmPassword" name="confirmPassword" id="confirmPassword" class="full-width">
-                <input type="submit" value="Sign up">
-            </form>
+            </div>
         </section>
     </main>
 </body>
