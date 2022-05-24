@@ -96,7 +96,7 @@ header {
   .header-container .menu-items {
     padding-top: 70px;
     background: var(--main-bg-color);
-    height: 65vh;
+    height: 67vh;
     max-width: 250px;
     transform: translate(-150%);
     display: flex;
